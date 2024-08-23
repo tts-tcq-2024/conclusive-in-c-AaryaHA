@@ -1,18 +1,6 @@
 #include "typewise-alert.h"
 #include <stdio.h>
 
-typedef struct
-{
-    double lowerlimit;
-    double upperlimit;
-}TemperatureLimits;
-
-typedef struct
-{
-    char* mailsubject;
-    char* mailbody;
-}email;
-
 const TemperatureLimits SetTemperatureLimits[] = {
 {0, 35},  //limits for passive cooling
 {0, 45},  // limits for High active cooling
