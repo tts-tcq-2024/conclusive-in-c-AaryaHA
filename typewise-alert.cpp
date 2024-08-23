@@ -7,7 +7,7 @@ const TemperatureLimits SetTemperatureLimits[] = {
 {0, 40}   // limits for Med active cooling
 };
 
-const emailmsg SetEmailMsg[] = {
+const email SetEmailMsg[] = {
   {" Temperature is too low", "The temperature is too low "},
   {" Temperature is too high", "The temperature is too high "},
   {" Temerature is normal", " "}
