@@ -1,7 +1,7 @@
 #include "typewise-alert.h"
 #include <stdio.h>
 
-typedef struct 
+typedef struct
 {
     double lowerlimit;
     double upperlimit;
