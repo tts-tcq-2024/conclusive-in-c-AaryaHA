@@ -9,9 +9,9 @@ typedef struct
 
 typedef struct
 {
-    char* emailsubject;
-    char* emailbody;
-}emailmsg;
+    char* mailsubject;
+    char* mailbody;
+}email;
 
 const TemperatureLimits SetTemperatureLimits[] = {
 {0, 35},  //limits for passive cooling
@@ -20,8 +20,8 @@ const TemperatureLimits SetTemperatureLimits[] = {
 };
 
 const emailmsg SetEmailMsg[] = {
-  {" Temperature is too low", "Hi, the temperature is too low "},
-  {" Temperature is too high", "Hi, the temperature is too high "},
+  {" Temperature is too low", "The temperature is too low "},
+  {" Temperature is too high", "The temperature is too high "},
   {" Temerature is normal", " "}
 };
 
@@ -64,5 +64,5 @@ void sendToController(BreachType breachType) {
 void sendToEmail(BreachType breachType) {
   const char* recepient = "a.b@c.com";
   printf("To: %s\n", recepient);
-  printf(" %s \n", SetEmailMsg[breachType].emailbody);
+  printf(" %s \n", SetEmailMsg[breachType].mailbody);
 }
